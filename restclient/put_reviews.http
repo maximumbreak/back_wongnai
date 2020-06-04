@@ -1,0 +1,6 @@
+put http://localhost:5000/reviews/1
+Content-Type: application/json
+
+{
+    "reviews":"ทดสอบ"
+}

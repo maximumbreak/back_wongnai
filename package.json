@@ -1,0 +1,46 @@
+{
+  "name": "test-wongnai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test/setup.js"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "importcsv": "NODE_ENV=dev babel-node ./src/import.js",
+    "test": "jest ./test --collectCoverage",
+    "unit": "jest \"src/.*\\.js$\" --coverage --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.4.5",
+    "babel-core": "7.0.0-bridge.0",
+    "csv-parser": "^2.3.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-swagger-generator": "^1.1.17",
+    "moment": "^2.26.0",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.16",
+    "neat-csv": "^5.2.0",
+    "sinon": "^9.0.2"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.10.1",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.0.1",
+    "superagent": "^5.2.2",
+    "supertest": "^4.0.2"
+  }
+}

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    container_name: test-wongnai
+    restart: always
+    build: ./
+    ports:
+      - '5555:5555'
+    volumes:
+      - .:/app
+    links:
+      - mongo
+    environment:
+      NODE_ENV: PROD
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '25555:27017'
