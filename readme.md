@@ -10,6 +10,12 @@ Patcharapon Chatsomboonchai Challenge Wonganai
 yarn test // or npm run test
 ```
 
+### Build
+
+```shell
+yarn build
+```
+
 ### Front End Test
 
 ```

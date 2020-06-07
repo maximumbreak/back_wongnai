@@ -11,7 +11,8 @@
     "dev": "nodemon ./src/server.js",
     "importcsv": "NODE_ENV=dev babel-node ./src/import.js",
     "test": "jest ./test --collectCoverage",
-    "unit": "jest \"src/.*\\.js$\" --coverage --forceExit"
+    "unit": "jest \"src/.*\\.js$\" --coverage --forceExit",
+    "build": "docker build -t test-wongnai_app ."
   },
   "author": "",
   "license": "ISC",
