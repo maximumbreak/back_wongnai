@@ -32,7 +32,7 @@
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "express-swagger-generator": "^1.1.17",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.5.8",
     "mongoose": "^5.9.16",
     "neat-csv": "^5.2.0",
